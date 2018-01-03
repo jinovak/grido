@@ -533,7 +533,7 @@ class Grid extends Components\Container
     {
         if ($this->tablePrototype === NULL) {
             $this->tablePrototype = \Nette\Utils\Html::el('table');
-            $this->tablePrototype->id($this->getName());
+            $this->tablePrototype->id($this->getUniqueId());
         }
 
         return $this->tablePrototype;
